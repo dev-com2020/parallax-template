@@ -1,0 +1,209 @@
+/* main rules */
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* color to use: #FFFF66 - yellow 30%, #FF9900 - orange 10%, #fff - white 60%,  #99CC99 - lightgreen 30% zamiennie jako element background, lub obramowanie*/
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+
+/* navbar */
+
+nav ul a,
+nav .brand-logo {
+  color: #4db6ac;
+}
+
+nav ul a:hover {
+  background-color: white;
+  color: #1b5e20;
+}
+
+.material-icons {
+  margin-top: 5px;
+}
+
+.sidenav-trigger>.material-icons {
+  margin-top: 0;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.sidenav li>a {
+  color: #4db6ac;
+}
+
+.sidenav li>a>i.material-icons {
+  color: #4db6ac;
+}
+
+
+/* header parallax */
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 60vh;
+  color: rgba(255, 255, 255, .9);
+  background: rgba(0, 0, 0, .5);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax-container>div.parallax {
+  opacity: 80%;
+}
+
+.parallax-container h1 {
+  padding-top: 2.5rem;
+}
+
+.input-field>label {
+  padding: 10px;
+  color: #1b5e20;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+  color: white;
+}
+
+input[type=text]:not(.browser-default) {
+  color: #1b5e20;
+}
+
+.select-wrapper input.select-dropdown {
+  background-color: #4db6ac;
+}
+
+.select-wrapper .caret {
+  fill: #1b5e20;
+  z-index: 2;
+}
+
+.parallax-container .btn-large {
+  margin-top: 3rem;
+}
+
+
+@media only screen and (max-width : 1024px) {
+
+  .parallax-container {
+    height: 55vh;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 10%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .parallax-container h1 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 3.5rem;
+  }
+
+  .parallax-container h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .parallax-container h5 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .parallax-container .btn-large {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+
+  .parallax-container {
+    height: 65vh;
+  }
+
+  .parallax-container h1 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 2.5rem;
+  }
+
+  .parallax-container h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .parallax-container h5 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #index-banner .section {
+    top: 0;
+  }
+
+  .dropdown-content {
+    height: 150px;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+/* description icon */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.row.center h5 {
+  line-height: 150%;
+}
+
+/* our courses */
+
+.card-action a {
+  padding: 2rem;
+}
+
+.card-action a:hover {
+  color: red;
+}
+
+/* footer */
+
+footer.page-footer {
+  margin: 0;
+}
+
+footer i.fab:hover {
+  color: #4db6ac;
+}
